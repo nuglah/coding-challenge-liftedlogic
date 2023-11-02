@@ -156,6 +156,8 @@ nav ul li a {
 .profile-image img {
     max-width: 100%;
     border-radius: 5px;
+    width: 569px;
+    height: auto;
 }
 
 .profile-content {
