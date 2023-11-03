@@ -36,7 +36,6 @@ body {
     }
 
     nav ul li {
-        /* display: block; */
         margin-bottom: 0px;
         margin-right: 0;
         text-align: center;
@@ -49,6 +48,12 @@ body {
         margin: 10px auto;
         float: right;
     }
+    .profile-image img {
+        max-width: 100%;
+        border-radius: 5px;
+        width: 569px;
+        height: 100%;
+    }
     footer {
         padding: 1rem 10px;
     }
@@ -57,7 +62,6 @@ body {
 
 .container {
     width: 100%;
-    /* max-width: 1270px; */
     margin: 0 auto;
     padding: 0;
     
@@ -78,7 +82,7 @@ header {
 }
 
 .nav-toggle {
-    display: none; /* hide the toggle button by default */
+    display: none;
 }
 
 
@@ -99,7 +103,6 @@ nav ul {
 }
 
 nav ul li {
-    /* display: inline; */
     margin-right: 20px;
 }
 nav ul li:last-child {
@@ -119,27 +122,21 @@ nav ul li a {
     border-radius: 2px;
     width: 168px;
     height: 40px;
-    /* top: 12px;
-    left: 1052px;
-    gap: 10px; */
     float: right;
 }
 
 .hero {
     background: url(assets/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg) center/cover no-repeat;
-    /* padding: 2rem 0; */
     text-align: center;
     height: 80vh; 
     align-items: center;
     justify-content: center;
     color: white;
-    /* margin-top: 64px; */
     width: 100%;
 }
 
 .hero-text h2 {
     font-size: 2.5rem; 
-    /* margin-bottom: 1rem; */
     text-align: center;
 }
 
@@ -187,6 +184,19 @@ p {
 .learn-more:hover {
     background-color: #4CAE85;
 }
+
+/* .slick-prev, .slick-next {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    z-index: 1;
+} */
+
+
+/* .new-releases {
+    height: auto;
+} */
+
 
 
 
@@ -245,6 +255,136 @@ footer {
 .social-icons a {
     margin-left: 10px;
 }
+
+.slick-carousel {
+	/*max-width: 700px;*/
+	margin: 0 auto;
+	padding: 30px 0;
+    max-width: 100%;
+    position: relative;
+}
+.carousel-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: If you want rounded corners */
+}
+
+.carousel-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px; /* Adjust according to the design */
+    font-weight: bold;
+}
+
+.carousel-card p {
+    font-size: 16px; /* Adjust according to the design */
+}
+/* .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-radius: 10px; 
+    padding: 100px;
+    transition: transform 0.3s ease;
+} */
+.slick-slide:hover {
+    transform: scale(1.05);
+}
+/* .slick-carousel .slick-slide:nth-child(even) {
+	background-color: #ddd;
+}
+.slick-carousel .slick-slide:nth-child(odd) {
+	background-color: #ccc;
+} */
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.prev-btn, .next-btn {
+    position: relative;
+    background: rgb(184	191	206	);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5px;
+}
+
+.prev-btn img, .next-btn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgb(2	31	91	);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* .slick-arrow {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+} */
+
+/* .slick-arrow:before {
+	font-size: 30px;
+}
+.slick-next {
+	right: 0;
+}
+.slick-prev {
+	left: 0;
+} */
+
+/* .slick-next, .slick-prev {
+    background: transparent;
+    color: #333;
+    font-size: 30px;
+    border-radius: 10px;
+} */
+
+.btn-wrap {
+	text-align: center;
+	width: 100%;
+}
+button {
+	background-color: #ddd;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+
 
 
 
