@@ -11,7 +11,6 @@ $(document).ready(function () {
 		infinite: true,
 		autoplay: false,
         centerMode: true,
-        focusOnSelect: true,
 	});
 	$(".prev-btn").click(function () {
 		$(".slick-carousel").slick("slickPrev");
